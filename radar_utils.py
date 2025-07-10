@@ -1,3 +1,9 @@
+import matplotlib.pyplot as plt
+import numpy as np
+from math import pi
+from rdkit import Chem
+from rdkit.Chem import Descriptors Draw
+from rdkit.Chem import Crippen, rdMolDescriptors, Lipinski
 def normalize_df_to_radar_plot(df: pd.DataFrame, smiles_col='SMILES') -> pd.DataFrame:
     """
     Normaliza propiedades para radar plot basadas en la regla de los 5 (Ro5).
