@@ -4,6 +4,7 @@ from math import pi
 from rdkit import Chem
 from rdkit.Chem import Descriptors Draw
 from rdkit.Chem import Crippen, rdMolDescriptors, Lipinski
+import pandas as pd
 
 
 def normalize_df_to_radar_plot(df: pd.DataFrame, smiles_col='SMILES') -> pd.DataFrame:
