@@ -20,7 +20,7 @@ def _preprocess_smiles(smiles: str) -> Optional[str]:
             return None
 
         # Correcciones y sanitización
-        mol = dm.fix_mol(mol, largest_only=True) ) #Ajusta la estructura de la molécula para corregir errores comunes
+        mol = dm.fix_mol(mol, largest_only=True) #Ajusta la estructura de la molécula para corregir errores comunes
         mol = dm.sanitize_mol(mol, sanifix=True, charge_neutral=False) #Sanitiza la molécula asegurándose de que sea químicamente válida
 
         # Estandarización
